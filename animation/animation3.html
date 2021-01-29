@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation{
+            width: 1373px;
+            height: 300px;
+            animation-name: aman;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+        @keyframes aman{
+            0%{background-image: url(beach1.gif);}
+            20%{background-image: url(beach2.gif);}
+            40%{background-image: url(seabeach1.gif);}
+            60%{background-image: url(water.gif);}
+            80%{background-image: url(pic1.jpg);}
+            100%{background-image: url(pic2.jpg);}
+            
+            
+        }
+        .running-box{
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            background-color: blue;
+            position: relative;
+             animation: nourin 2s 3s;
+             animation-iteration-count: infinite;
+             animation-fill-mode: backwards;
+        }
+        @keyframes nourin{
+            0%{left: 200px;background: red;}
+            50%{left: 400px;background: rebeccapurple;}
+            100%{top: 200px;background: green;}
+        }
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+       
+        
+    
+    <div class="running-box"></div>
+</body>
+</html>
